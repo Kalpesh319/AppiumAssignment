@@ -25,12 +25,12 @@ public class GroceryStoreBaseFile {
 	
 	@BeforeMethod
 	public void tst() throws MalformedURLException, InterruptedException {
-	service=new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\tejas\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1").usingPort(4723).build();
+	service=new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\kalpesh Appium\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1").usingPort(4723).build();
 	service.start();
 	
 	UiAutomator2Options opt=new UiAutomator2Options();
-	opt.setDeviceName("Tejas");					
-	opt.setApp("C:\\TejasAppium\\General-Store.apk"); 
+	opt.setDeviceName("kalpesh");					
+	opt.setApp("C:\\kalpesh Appium\\General-Store.apk"); 
 	driver=new AndroidDriver(new URL("http://127.0.0.1:4723"), opt);
 	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 	Thread.sleep(2000);
