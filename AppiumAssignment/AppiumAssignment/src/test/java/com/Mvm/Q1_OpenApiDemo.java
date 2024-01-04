@@ -14,8 +14,8 @@ public class Q1_OpenApiDemo {
 public void open() throws InterruptedException, MalformedURLException  {
 
 UiAutomator2Options options=new UiAutomator2Options();
-options.setDeviceName("Tejas");
-options.setApp("C:\\TejasAppium\\ApiDemos-debug.apk");
+options.setDeviceName("kalpesh");
+options.setApp("C:\\kalpesh Appium\\ApiDemos-debug.apk");
 AndroidDriver driver=new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 Thread.sleep(10000);	
 	
